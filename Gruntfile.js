@@ -5,7 +5,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     
     jshint: {
-      all: ['Gruntfile.js', 'app/**/*.js', 'app/*.js']
+      all: ['Gruntfile.js', 'app/**/*.js', 'app/*.js'],
+      options: {
+        ignores: ["app/templates/compiled.js"]
+      }
     },
 
     handlebars: {
