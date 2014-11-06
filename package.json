@@ -1,0 +1,22 @@
+{
+  "name": "ecomm",
+  "version": "1.0.0",
+  "description": "Rest API for ecommerce",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.1",
+    "method-override": "^2.3.0",
+    "mongoose": "^3.8.18"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-handlebars": "^0.9.0",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}
