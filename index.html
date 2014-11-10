@@ -2,16 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECommerce Index</title>
+
+    <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" href="app/css/app.css">
   </head>
   <body>
-    <section>
-      
-    </section>
+    <header id="header"></header>
+    <article id="main"></article>
+    <footer id="footer"></footer>
     
     <!-- Vendor scripts -->
     <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
     <script src="bower_components/backbone.marionette/lib/backbone.marionette.js"></script>
@@ -23,5 +28,16 @@
     <!-- Application scripts -->
     <script src="app/EComm.js"></script>
     <script src="app/EComm.Products.js"></script>
+    <script src="app/EComm.ProductList.View.js"></script>
+    <script src="app/EComm.ProductList.js"></script>
+    <script src="app/EComm.ProductABM.js"></script>
+    <script src="app/EComm.Layouts.js"></script>
+    <script src="app/EComm.ProductABM.Views.js"></script>
+    <script>
+        $(function () {
+            // start the EComm app (defined in app/EComm.js)
+            EComm.start();
+        });
+    </script>
   </body>
 </html>

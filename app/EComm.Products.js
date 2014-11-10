@@ -14,11 +14,22 @@
         style: "",
         modified: 0
       },
+
       validate: function(attrs) {
-              if (attrs.hasOwnProperty('title') && !_.isString(attrs.title)) {
-                  return 'Product.title must be a string value.';
-              }
-          }
+        if (attrs.hasOwnProperty('title') && !_.isString(attrs.title)) {
+          return 'Product.title must be a string value.';
+        }
+      },
+
+      searchMatch: function(text){
+        return this.get("title").search(text) >= 0;
+      },
+
+      setSelected: function(selected) {
+        
+
+      }
+
     });
 
 
